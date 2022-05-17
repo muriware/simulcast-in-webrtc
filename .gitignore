@@ -1,0 +1,8 @@
+.env
+.DS_store
+
+# Node file
+node_modules/
+
+# Typescript
+dist
