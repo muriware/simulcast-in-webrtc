@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Video Simulcast Sample with WebRTC</title>
+    <meta name="description" content="Video Simulcast Sample with WebRTC" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="root">
+      <div class="main">
+        <div class="video-container">
+          <video id="remote-view" autoplay muted playsinline></video>
+          <video id="self-view" autoplay muted playsinline></video>
+        </div>
+        <div class="video-controller">
+          <button id="enable-camera">Enable Camera</button>
+          <select name="constraints" id="select-constraints">
+            <option value="">No constraints</option>
+            <optgroup label="lowres">
+              <option value="lowres-wide">320x180 (16:9)</option>
+              <option value="lowres">320x240 (4:3)</option>
+            </optgroup>
+            <optgroup label="stdres">
+              <option value="stdres-wide">640x360 (16:9)</option>
+              <option value="stdres">640x480 (4:3)</option>
+            </optgroup>
+            <optgroup label="hires">
+              <option value="hires-wide">1280x720 (16:9)</option>
+              <option value="hires">1280x960 (4:3)</option>
+            </optgroup>
+          </select>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
