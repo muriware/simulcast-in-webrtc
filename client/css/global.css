@@ -20,51 +20,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Layout */
-.root {
-  display: flex;
-  height: auto;
-  justify-content: center;
-  margin: 0 auto;
-  max-width: 980px;
-  min-height: 100vh;
-  padding: 48px;
-  width: 100%;
-}
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 /* Video */
-.video-container {
-  position: relative;
-}
-.video-controller {
-  margin-top: 16px;
-}
-.video-controller > * {
-  margin-right: 6px;
-}
-#remote-view {
-  background: var(--gray-50);
-  border: 1px solid var(--gray-100);
-  border-radius: var(--radius);
-  height: 600px;
-  object-fit: cover;
-  width: 800px;
-}
-#self-view {
-  background: transparent;
-  border-radius: var(--radius);
-  bottom: 16px;
-  height: 150px;
-  object-fit: cover;
-  position: absolute;
-  right: 16px;
-  width: 200px;
-  transform: scaleX(-1);
+video {
+  width: 320px;
 }
 
 /* Buttons */
@@ -87,27 +45,6 @@ button:active {
   transform: scale(0.98);
 }
 button:disabled {
-  cursor: auto;
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-/* Select */
-select {
-  border-radius: var(--radius);
-  height: var(--height);
-  margin: 0;
-  padding: 6px;
-}
-select:hover {
-  cursor: pointer;
-}
-select:focus {
-  box-shadow: 0 0 0 1px rgba(50, 151, 211, 0.3), 0 1px 1px 0 rgba(0, 0, 0, 0.07),
-    0 0 0 4px rgba(50, 151, 211, 0.3);
-  outline: none;
-}
-select:disabled {
   cursor: auto;
   opacity: 0.5;
   pointer-events: none;
